@@ -1,0 +1,787 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('./font/Poppins/Poppins-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: 600;
+}
+
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./font/Poppins/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./font/Poppins/Poppins-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./font/Poppins/Poppins-Light.ttf');
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+.navbar {
+    background-color: red;
+    text-align: center;
+    text-transform:capitalize ;
+    font-size: 21px;
+    position: fixed;
+    min-width: 1366px;
+    font-weight: 400;
+    color: #fff;
+}
+.navbar-nav{
+    margin-left: 80px;
+}
+.navbar .collapse a{
+    color: #fff;
+    margin-left: 30px;
+    transition: all 0.2s ease-in;
+}
+.navbar .collapse a:hover{
+    color: #00132b;
+}
+.navbar .logo img{
+    animation: logoanimation 1s linear;
+    animation-iteration-count: 1;
+    animation-delay: 0.2s;
+}
+@keyframes logoanimation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.navbar .navbar-brand{
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+.navbar .navbar-brand:hover{
+    color: #00132b;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    background-color: #00132b;
+    background-image: url(./img/bg-header.png);
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 822px;
+}
+.header .content h1{
+    font-size: 89px;
+    font-weight: 700;
+    font-family: "poppins";
+    color: rgb(254, 246, 252);
+    text-align: left;
+    max-width: 570px;
+    margin-bottom: 86px;
+    animation: headerescale 1s  cubic-bezier(.25,-0.41,1,1);
+    animation-iteration-count: 1;
+}
+@keyframes headerescale {
+    0%{
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.header .content a{
+    font-size: 17px;
+    font-family: "poppins";
+    color: rgb(255, 255, 255);
+    line-height: 1.729;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 12px 79px;
+    transition: all 0.3s;
+}
+.header .content a:hover{
+   box-shadow: 0 0 10px black inset;
+}
+.header .content .btn1{
+    background-color: red ;
+    
+    border-radius: 4px;
+}
+.header .content .btn2{
+    background-color: aliceblue;
+    border-radius: 4px;
+    margin-left: 15px ;
+    color: black;
+}
+
+.header .butons{
+    animation: headerbtn 1s linear;
+    animation-delay: -0.2s;
+}
+@keyframes headerbtn {
+    0%{
+        opacity: 0;
+        transform: translateY(246px)
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about .row {
+    background-color:white;
+    margin-top: -172px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 19px rgba(8, 20, 25,0.5);
+}
+.about .content h2,
+.coronavirus .content h2{
+    font-size: 45px;
+    font-family: "Poppins";
+    color: rgb(8, 20, 25);
+    font-weight: 700;
+    line-height: 0.653;
+    text-align: left;
+    margin-top: 172px;
+    position: relative;
+    margin-bottom: 35px
+}
+.about .content h2::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+    bottom: -20px;
+    left: 0;
+    background-color: red ;
+    border-radius: 20px;
+    width: 18%;   
+}
+.animated{
+    animation: animbefore 1s ease 1;
+}
+@keyframes animbefore {
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes aboutimginimation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ @keyframes aboutimginimation2 {
+      0%{
+          transform: rotate(360deg);
+      }
+      100%{
+          transform: rotate(0deg);
+      }
+  }
+.animated1{
+    animation: aboutimginimation 3s linear;
+    animation-iteration-count: 2;
+}
+.animated2{
+    animation: aboutimginimation2 3s linear;
+    animation-iteration-count: 2.5;
+}
+
+.about .content p,
+.coronavirus .content p
+{
+    font-size: 17px;
+    font-family: "Poppins";
+    color: rgb(8, 20, 25);
+    line-height: 1.729;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.about .content a,
+.coronavirus .content a{
+    font-size: 17px;
+    font-family: "Poppins";
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.729;
+    background-color: #00132b;
+    max-width: 274px;
+    padding: 25px 15px;
+    margin-bottom: 132px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+.about .content a:hover,
+.coronavirus .content a:hover{
+    box-shadow: 0 0 10px #00132b inset;
+    background-color: red;
+    color: #00132b;
+}
+.coronavirus .content h2{
+    line-height: 0.898;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+.coronavirus .content p{
+    margin-bottom: 45px;
+}
+
+
+  
+
+
+
+.protect  .content-item{
+    width: 372px;
+}
+.swiper-slide-active{
+overflow: visible !important;
+}
+.protect .content h2{
+    font-size: 45px;
+    font-family: "Poppins";
+    color: rgb(27, 27, 27);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0.653;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.protect .content p{
+    font-size: 16px;
+    font-family: "Poppins";
+    color: rgb(21, 21, 21);
+    line-height: 1.765;
+    text-align: center;
+    margin-bottom: 49px;
+    font-weight: 400;
+}
+.protect .inner-content{
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px 0;
+    transition: all 0.3s;
+}
+.protect .inner-content:hover{
+    box-shadow: 0 0 10px red ;
+}
+.protect .inner-content img{
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    padding: 25px;
+    max-height: 200px;
+    transition: all .3s;
+}
+.protect .inner-content img:hover{
+    transform: scale(1.2);
+}
+.protect .inner-content h3{
+    font-size: 17px;
+    font-family: "Poppins";
+    color: rgb(13, 14, 14);
+    font-weight: 700;
+    line-height: 1.765;
+    text-align: center;
+    margin-top: 20px;
+}
+.protect .inner-content p{
+    font-size: 17px;
+    font-family: "Poppins";
+    color: rgb(8, 20, 25);
+    line-height: 1.729;
+    text-align: center;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    max-width: 310px;
+    margin-left: 23px;
+}
+.protect .btnn{
+    font-size: 15px;
+    font-family: "Poppins";
+    color: rgb(254, 254, 253);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.47;
+    text-align: center;
+    text-decoration: none;
+    background-color: #00132b;
+    display: block;
+    max-width: 174px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 150px;
+    padding: 13px 15px;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.protect .btnn:hover{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cases .content1 h2{
+    font-size: 45px;
+    font-family: "Poppins";
+    color: rgb(21, 21, 21);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.898;
+    text-align: center;
+    margin-top: 170px;
+}
+.cases .content1 p{
+    font-size: 17px;
+    font-family: "Poppins";
+    color: rgb(8, 20, 25);
+    line-height: 1.729;
+    text-align: center;
+    font-weight: 400;
+}
+.cases img{
+    max-width: 100%; 
+}
+
+.cases .col-md-4 .content .inner-content a{
+    font-size: 20px;
+    font-family: "Poppins";
+    color: rgb(254, 254, 253);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    background-color: red;
+    max-width: 174px;
+    padding: 12px 11px;
+    position: absolute;
+    margin-left: 131px;
+    margin-top: -138px;
+    box-shadow: 0 0 100px red;
+    border-radius: 6px;
+
+}
+
+.cases .col-md-4 .content h3{
+    font-size: 30px;
+    font-family: "Poppins";
+    color: rgb(21, 21, 21);
+    font-weight: 700;
+    line-height: 1.347;
+    text-align: center;
+    margin-top: 50px;
+}
+.cases .col-md-4 .content p{
+    font-size: 17px;
+    font-family: "Poppins";
+    color: rgb(8, 20, 25);
+    line-height: 1.729;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 75px;
+    padding: 1px 10px;
+}
+.cases .col-md-4 .content{
+    border: 9px solid aliceblue;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+    transition: all 0.3s;
+}
+
+.cases .col-md-4 .content:hover{
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+
+}
+
+
+.cases .col-md-4 .content .inner-content a{
+    display: none;
+}
+/*
+.cases .col-md-4 .content button{
+    display: none;
+}
+.cases .col-md-4 .content button{
+    font-size: 20px;
+    font-family: "Poppins";
+    color: rgb(254, 254, 253);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    background-color: red;
+    max-width: 174px;
+    padding: 12px 11px;
+    position: absolute;
+    margin-left: 131px;
+    margin-top: -138px;
+    box-shadow: 0 0 100px red;
+    border: 0;
+    border-radius: 6px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+.says .content h2{
+    font-size: 45px;
+    font-family: "Poppins";
+    color: rgb(17, 17, 17);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.511;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.says .inner-content{
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding-bottom: 45px;
+    box-shadow: 0 0 26px #a19e9e;
+}
+.says .inner-content {
+    text-align: center;
+}
+.says .inner-content h3{
+    font-size: 20px;
+    font-family: "poppins";
+    color: rgb(8, 20, 25);
+    text-transform: uppercase;
+    line-height: 1.47;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.says .inner-content p{
+    font-size: 17px;
+    font-family: "Poppins";
+    color: rgb(8, 20, 25);
+    line-height: 1.729;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 19px;
+
+}
+.says .inner-content img{
+    margin-top: -100px;
+}
+
+
+
+
+
+.subscribe .content input::placeholder{
+    font-size: 18px;
+    font-family: "Poppins";
+    color: rgb(254, 254, 253);
+    text-transform: uppercase;
+    line-height: 1.633;
+    text-align: left;
+    
+}
+
+.subscribe .content input{
+     background-color: transparent;
+    display: block;
+    margin: auto;
+    margin-top: 88px;
+    margin-bottom: 30px;
+    min-width: 927px;
+    padding: 27px 16px;
+    border: 2px solid rgba(0, 0, 0,0.2);
+    border-radius: 40px;
+    outline: none;
+    transition: all 0.3s;
+}
+.subscribe .content input:hover{
+    border: 2px solid rgba(0, 0, 0,0.5);
+
+
+}
+.subscribe .content a{
+    font-size: 21px;
+    font-family: "Poppins";
+    color: rgb(254, 254, 253);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.4;
+    text-align: center;
+    display: block;
+    max-width: 402px;
+    padding: 20px 15px;
+    margin: auto;
+    text-decoration: none;
+    background-color: #00132b;
+    border-radius: 40px;
+    margin-bottom: 60px;
+    transition: all 0.3s;
+
+}
+
+.subscribe .content a:hover{
+    background-color: red;
+    box-shadow: 0 0 20px #00132b ;
+}
+
+
+
+
+.footer{
+    background-color: #090c11;
+    color: #fff;
+    font-family: 'poppins';
+    
+}
+.footer h3{
+    font-size: 24px;
+    font-family: "Poppins";
+    color: rgb(254, 254, 253);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.308;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 38px;
+
+}
+
+
+.footer p{
+    font-size: 17px;
+    font-family: "Poppins";
+    color: rgb(254, 254, 253);
+    line-height: 1.847;
+    text-align: left;
+    font-weight: 400;
+}
+
+.footer a{
+    font-size: 17px;
+    font-family: "Poppins";
+    color: rgb(254, 254, 253);
+    line-height: 1.847;
+    text-align: left;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+.footer span{
+    font-size: 17.5px;
+    font-family: "poppins";
+    color: rgb(255, 255, 255);
+    line-height: 1.657;
+    text-align: left;
+    display: block;
+    margin-left: 20px;
+
+}
+
+.footer .content-footer p{
+    font-size: 17px;
+    font-family: "poppins";
+    color: rgba(254, 254, 253, 0.812);
+    line-height: 1.906;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer .contact{
+    display: flex;
+    margin-bottom: 20px;
+}
+.footer .col-md-2 a{
+    position: relative;
+    transform: translateX(0em) translateZ(0);
+    transition: all 0.3s ease-in-out;
+} 
+.footer .col-md-2 a:hover{
+    color: red;
+    transform: translateX(1em) translateZ(0);
+}
+.footer .col-md-2 a:before {
+    content: "→";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    transform: translateX(-1.5em) translateZ(0);
+    transition: all 0.3s ease;
+}
+.footer .col-md-2 a:hover:before{
+    opacity: 1;
+    transform: translateX(-1.5em) translateZ(0);
+    
+}
+
+
+
+  
+@media only screen and (max-width: 910px) {
+    
+    .header {
+            min-height: 650px;
+        }
+    
+        .header .content h1 {
+            font-size: 50px;
+            max-width: 502px;
+            margin-bottom: 70px;
+        }
+    
+        .header .content a {
+            font-size: 12px;
+            padding: 11px 48px;
+        }
+    
+    .about .row {
+            margin-top: -87px;
+        }
+    
+        .about .content h2 {
+            font-size: 27px;
+            margin-top: 64px;
+            margin-bottom: 22px;
+        }
+    
+        .about .content h2::after {
+            top: 22px;
+            bottom: -10px;
+            width: 17%;
+        }
+    
+        .about .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 46px;
+        }
+        .about .content a
+        {
+            font-size: 15px;
+            line-height: 1.729;
+            max-width: 149px;
+            padding: 11px 13px;
+            margin-bottom: 0;
+        }
+        .about .row .col-md-4{
+            margin-top: 0px !important;
+            padding: 20px;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
